@@ -1,0 +1,129 @@
+* {
+    margin: 0 auto
+}
+
+
+.header,
+.navigation_header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header {
+    box-shadow: 5px 5px 50px gray;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation_header {
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a {
+    color: #6ecf78;
+    font-family: IBM Plex Sans;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.active {
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img#logo {
+    height: 80px;
+    width: 80px;
+
+}
+
+.navigation_header a:hover {
+    text-align: center;
+    padding: 8px;
+    color: darkgreen;
+    border-bottom: 2px solid rgb(206, 131, 131);
+}
+
+.content {
+    background-image: url('tiro-medio-de-pessoas-correndo-juntas.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 200px;
+    font-family: Inknut Antiqua;
+    color: white;
+    font-size: 50px;
+    padding-left: 30px;
+    height: 600px;
+    transition: 1s;
+}
+
+p {
+    font-size: 30px;
+}
+
+.btn_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    height: 10px
+}
+
+@media screen and (max-width: 600px) {
+    .btn_icon_header {
+        display: block;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: rgb(34, 155, 74);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        
+    }
+    
+    .content{
+        padding-top: 120px;
+    }
+
+    .content h1{
+        font-size:60px;
+    }
+
+    .content p{
+        text-align: center;
+        font-size:15px;
+    }
+
+
+    hr {
+        display: none;
+    }
+
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw
+    }
+}
