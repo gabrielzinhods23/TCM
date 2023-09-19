@@ -1,8 +1,6 @@
 * {
     margin: 0 auto;
-
 }
-
 
 .header,
 .navigation_header {
@@ -25,7 +23,7 @@
 }
 
 .navigation_header a {
-    color: #00ff1a;
+    color: #6ecf78;
     font-family: IBM Plex Sans;
     text-decoration: none;
     transition: 1s;
@@ -51,29 +49,6 @@ img#logo {
     border-bottom: 2px solid rgb(206, 131, 131);
 }
 
-.content {
-    background-image: url('tiro-medio-de-pessoas-correndo-juntas.webp');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 10vw;
-    padding-left: 2vw;
-    font-family: Inknut Antiqua;
-    color: rgb(255, 255, 255);
-    height: 35vw;
-    transition: 1s;
-}
-
-.content p{
-    font-size: 2vw;
-    box-shadow:rgb(0, 0, 0);
-}
-
-.content h1{
-    font-size: 8vw;
-
-}
-
 .btn_icon_header {
     display: none;
     background-color: transparent;
@@ -86,6 +61,69 @@ hr {
     height: 10px
 }
 
+nav {
+    background-color: #7af286;
+    flex-direction: column;
+}
+
+div#abouttext{
+    display: flex;
+    flex-direction: row;
+    padding: 5vw;
+    font-size: 1.8vw;
+    font-family: IBM Plex Sans;
+    
+}
+
+div#about1{
+    width: 60vw;
+    padding-right: 10vw;
+}
+
+div#about2{
+    width: 60vw;
+}
+
+img#eucorrendo{
+    width: 100vw;
+    height: 60vw;
+}
+
+.logo{
+    height: 2vw;;
+}
+
+div#logos {
+    display: flex;
+    place-items: right;
+    width: 30vw;
+    height: 20vw;
+    flex-direction: column;
+
+}
+
+div#instagram, div#cellphone, div#email{
+    display: flex;
+    flex-direction: row;
+}
+
+div#instatext, div#celltext, div#etext {
+    padding-top: 0.7vw;
+    padding-right: 5vw;
+}
+
+footer{
+    background-color: #165715;
+    text-align: center;
+    height: 3vw;
+
+}
+
+footer p{
+    color: white;
+    padding-top: 1vw;
+}
+
 @media screen and (max-width: 600px) {
     .btn_icon_header {
         display: block;
@@ -95,36 +133,44 @@ hr {
         position: absolute;
         flex-direction: column;
         top: 0;
-        background-color: rgb(12, 54, 22);
-        height: 110%;
+        background-color: rgb(34, 155, 74);
+        height: 100%;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
         margin-left: -100vw;
         
     }
-    
-    .content{
-        padding-top: 120px;
-        height: 150vw;
-
-    }
-
-    .content h1{
-        font-size: 12vw;
-    }
-
-    .content p{
-        font-size: 4vw;
-    }
-
 
     hr {
         display: none;
     }
 
-}
+    div#abouttext{
+        display: flex;
+        flex-direction: column;
+        
+    }
 
+    div#about1{
+        padding-right: 0vw;
+    }
+
+    div#logos {
+        height: 30vw;
+    }
+
+    footer{
+        height: 10vw;
+    }
+
+    nav p {
+        font-size: 5vw;
+    }
+
+    nav h1 {
+        font-size: 7vw
+    }
 @keyframes showSidebar {
     from {
         margin-left: -100vw;
@@ -133,4 +179,7 @@ hr {
     top {
         margin-left: -10vw
     }
+
+}
+
 }

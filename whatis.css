@@ -1,0 +1,201 @@
+* {
+    margin: 0 auto;
+}
+
+.header,
+.navigation_header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header {
+    box-shadow: 5px 5px 50px gray;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation_header {
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a {
+    color: #6ecf78;
+    font-family: IBM Plex Sans;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.active {
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img#logo {
+    height: 80px;
+    width: 80px;
+
+}
+
+.navigation_header a:hover {
+    text-align: center;
+    padding: 8px;
+    color: darkgreen;
+    border-bottom: 2px solid rgb(206, 131, 131);
+}
+
+.btn_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    height: 10px
+}
+
+nav {
+    background-color: #7af286;
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    font-family: sans-serif;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+
+}
+
+nav p{
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    font-family: sans-serif;
+    align-items: center;
+    padding-bottom: 2vw;
+    animation-name: oquecss;
+    animation-duration: 2s;
+}
+
+.imgwhatis{
+    display: grid;
+    place-items: center;
+}
+
+
+
+img#criançacorrendo{
+    height: 20vw;
+}
+
+h1#title1{
+    font-size: 5vw;
+}
+
+.subtitles1{
+    font-size: 3vw;
+}
+
+img#idososcorrendo{
+    height: 20vw;
+    width: 35vw;
+}
+
+img#corridaderua{
+    height: 30vw;
+    width: 40vw;
+}
+
+img#maratona1{
+    height: 30vw;
+    width: 40vw;
+}
+
+footer{
+    background-color: #165715;
+    text-align: center;
+    height: 3vw;
+
+}
+
+footer p{
+    color: white;
+    padding-top: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .btn_icon_header {
+        display: block;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: rgb(34, 155, 74);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        
+    }
+
+
+    hr {
+        display: none;
+    }
+
+   nav {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+   }
+
+   img#idososcorrendo{
+    height: 50vw;
+    width: 75vw;
+   }
+
+   img#criançacorrendo{
+    height: 50vw;
+    width: 55vw;
+   }
+
+   img#maratona1{
+    height: 50vw;
+    width: 75vw;
+   }
+
+   img#corridaderua{
+    height: 50vw;
+    width: 75vw;
+   }
+
+   .subtitles1 {
+    font-size: 7vw;
+   }
+
+   nav p {
+        font-size: 4vw;
+    }
+
+    footer {
+        height: 6vw;
+    }
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw
+    }
+}
