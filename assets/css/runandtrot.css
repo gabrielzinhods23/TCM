@@ -1,0 +1,112 @@
+:root {
+    --background-color1: #9ef3a7;
+}
+
+[data-animar="fade-down"] {
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+#wavepath{
+    fill: var(--background-color1);
+}
+
+#bc1 {
+    background-color: var(--background-color1);
+}
+
+#bc2 {
+    background-color: #ffffff;
+}
+
+main {
+    text-align: center;
+}
+
+main h1, p {
+    font-family:  'Source Sans Pro', sans-serif;
+}
+
+main h1 {
+    font-size: 6rem;
+    color: black;
+    padding-top: 9rem;
+}
+
+main p {
+    padding-top: 2rem ;
+    padding-right: 3rem;
+    padding-left: 3rem ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.title {
+    height: 40rem;
+    backdrop-filter: blur(2000px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.gif {
+    display: flex;
+    flex-direction: row;
+}
+
+#run {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#meninaandando {
+    height: 25rem;
+}
+
+#marcha {
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+#peoplejog {
+    padding-top: 6rem;
+}
+@media screen and (max-width: 600px) {
+    main h1 {
+        font-size: 5rem;
+        padding-top: 6rem;
+    }
+
+    .title {
+        height: 50rem;
+        background-image: url(correrouandarresp.png);
+    }
+
+    .gif{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #girlrunning {
+        width: 75%;
+        height: 20rem;
+    }
+
+    #trackrun {
+        width: 90%;
+    }
+}

@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Race</title>
-    <link rel="stylesheet" href="configura.css">
-    <link rel="shortcut icon" type="imagex/png" href="Race.png">
+    <link rel="stylesheet" href="assets/css/configura.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/racelogo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap"rel="stylesheet">
 </head>
-
 <body>
-    <div class="header" id="header">
+    <header>
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
@@ -26,8 +23,8 @@
             </svg>
         </button>
         <div class="logo_header">
-            <a href="Index.html">
-                <img src="Race.png" alt="A corrida" id="logo">
+            <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
             </a>
         </div>
         <div class="navigation_header" id="navigation_header">
@@ -37,24 +34,32 @@
                     <path
                         d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                 </svg>
-
             </button>
-            <a href="whatis.html" class="runsub">Run</a>
+            <p id="item" class="menus" onmouseover="mostrarMenu()">Run</p>
+            <ul id="ul">
+                <li><a href="whatis.html">What it is</a></li>
+                <li><a href="runandtrot.html">Run and trot?</a></li>
+                <li>5km</li>
+                <li>15km</li>
+                <li>21km</li>
+                <li>42km</li>
+                <li>How am I going?</li>
+            </ul>
+                <hr class="rounded">
+            <a href="">Theory</a>
                 <hr class="rounded">
             <a href="#">Training</a>
                 <hr class="rounded">
             <a href="aboutme.html">About me</a>
                 <hr class="rounded">
             <a href="#" class="active">Contact</a>
-            </div>
         </div>
-    </div>
-
+    </header>
     <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
-        <h1> THE RACE</h1>
-        <p> The sport that was born in our blood.</p>
+        <h1 id="title"> THE RACE</h1>
+        <p id="subtitle"> The sport that was born in our blood.</p>
     </div>
+    <script src="assets/js/mobile-navbar.js"></script>
+    <script src="assets/js/submenu.js"></script>
 </body>
-<script src="mobile-navbar.js"></script>
-
 </html>

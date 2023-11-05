@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The race - About us</title>
-    <link rel="stylesheet" href="aboutme.css">
-    <link rel="shortcut icon" type="imagex/png" href="A corrida.png">
+    <link rel="stylesheet" href="assets/css/aboutme.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/racelogo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap"
         rel="stylesheet">
-
 </head>
 <body>
-    <div class="header" id="header">
+    <header>
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
@@ -24,31 +25,41 @@
             </svg>
         </button>
         <div class="logo_header">
-            <a href="Index.html">
-                <img src="A corrida.png" alt="A corrida" id="logo">
+            <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
             </a>
         </div>
         <div class="navigation_header" id="navigation_header">
             <button onclick="toggleSidebar()" class="btn_icon_header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
                     viewBox="0 0 16 16">
-                    <path
+                    <path id="bg"
                         d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                 </svg>
-    
             </button>
-            <a href="whatis.html">Run</a>
-            <hr class="rounded">
-            <a href="#">Training</a>
-            <hr class="rounded">
-            <a href="aboutus.html">About us</a>
-            <hr class="rounded">
-            <a href="#" class="active">Contact</a>
+                <p id="item" class="menus" onmouseover="mostrarMenu()">Run</p>            
+                <ul id="ul">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li>5km</li>
+                    <li>15km</li>
+                    <li>21km</li>
+                    <li>42km</li>
+                    <li>How am I going?</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="">Theory</a>
+                    <hr class="rounded">
+                <a href="#">Training</a>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
         </div>
-    </div>
-    <nav>
+    </header>
+    <main>
         <div id="aboutimg">
-            <img src="eu.webp" id="eucorrendo" >
+            <img src="assets/imgs/eu.png" id="eucorrendo" >
         </div>
         <div id="abouttext">
             <div id="about1"> 
@@ -79,36 +90,56 @@
                 </p>
             </div>
         </div>
-        <div id="logos">
-            <div id="instagram">
-                <div id="instalogo">
-                    <img src="instagram.png" alt="insta" class="logo">
-                </div>
-                <div id="instatext">
-                    <p>@eikiaman0_</p>
-                </div>
-            </div>
-            <div id="cellphone">
-                <div id="celllogo">
-                    <img src="telefone.png" alt="cellphone" class="logo" >
-                </div>
-                <div id="celltext">
-                    +55 11 97154-8992
-                </div>
-            </div>
-            <div id="email">
-                <div id="elogo">
-                    <img src="o-email.png" alt="email" class="logo">
-                </div>
-                <div id="etext">
-                    <p>eikiamano@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </nav>
+    </main>
     <footer>
-        Copyright© 2023 - All right reserved.
+        <div class="row">
+            <div class="col">
+            <a href="index.html">
+              <img src="assets/imgs/racelogo.webp" class="logo"/>
+            </a>
+              <p id="especial">
+                This website was created by Gabriel Amano for school project.
+              </p>
+            </div>
+            <div class="col">
+              <h3>Instituction<div class="underline"><span></span></div></h3>
+              <p>ETESP</p>
+              <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+              <p>SP, 01101-010</p>
+              <p class="email-id">eikiamano@gmail.com</p>
+              <h4>+11 - 0123456789</h4>
+            </div>
+            <div class="col">
+              <h3>Links <div class="underline"><span></span></div></h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="impact.html">Impacto na Área</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="nofilme.html">Atuação no Filme</a></li>
+                <li><a href="atualidade.html">Atualidade</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contact-us <div class="underline"><span></span></div></h3>
+              <form>
+                <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
+                <input type="email" placeholder="Write your email here" required />
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">
+            Enzo Boschetti Dal Medico e Gabriel Eiki Amano © 2023 - All Right reserved
+          </p>
     </footer>
+    <script src="assets/js/mobile-navbar.js"></script>
+    <script src="assets/js/submenu.js"></script>
 </body>
-<script src="mobile-navbar.js"></script>
 </html>

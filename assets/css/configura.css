@@ -1,0 +1,88 @@
+/* submenu*/
+#ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px;
+    top: 70px;
+
+}
+
+li {
+    text-decoration: none;
+}
+
+.menus, li {
+    cursor: pointer;
+}
+
+/*conteúdo*/
+#title {
+    opacity: 0;
+    transform: translateY(0px);
+    animation: moveup 2s linear forwards;
+  }
+
+  #subtitle {
+    opacity: 0;
+    transform: translateY(0px);
+    animation: moveup 1s linear forwards;
+}
+
+  @keyframes moveup {
+    100% {
+      opacity: 1;
+      transform: translateY(45px);
+    }
+  }
+
+.content {
+    background-image: url('../imgs/tiro-medio-de-pessoas-correndo-juntas.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 10vw;
+    padding-left: 2vw;
+    font-family: Inknut Antiqua;
+    color: rgb(255, 255, 255);
+    height: 35vw;
+    transition: 1s;
+}
+
+.content p{
+    font-size: 2vw;
+
+}
+
+.content h1{
+    font-size: 8vw;
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        padding-top: 120px;
+        height: 150vw;
+
+    }
+
+    .content h1{
+        font-size: 12vw;
+    }
+
+    .content p{
+        font-size: 4vw;
+    }
+
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw
+    }
+}

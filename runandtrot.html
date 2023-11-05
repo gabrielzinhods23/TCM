@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run and trot - The race</title>
+    <link rel="stylesheet" href="assets/css/runandtrot.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+            </a>
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path 
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+    
+            </button>
+            <p id="item" class="menus" onmouseover="mostrarMenu()">Run</p>
+            <ul id="ul">
+                <li><a href="whatis.html">What it is</a></li>
+                <li><a href="runandtrot.html">Run and trot?</a></li>
+                <li>5km</li>
+                <li>15km</li>
+                <li>21km</li>
+                <li>42km</li>
+                <li>How am I going?</li>
+            </ul>
+                <hr class="rounded">
+            <a href="">Theory</a>
+                <hr class="rounded">
+            <a href="#">Training</a>
+                <hr class="rounded">
+            <a href="aboutme.html">About me</a>
+                <hr class="rounded">
+            <a href="#" class="active">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1 data-animar="fade-up"> What is the difference beetween run and jog?</h1>
+        </div>
+        <div class="content">
+        <div id="bc1">
+            <div class="text" class="tx" data-animar="fade-up">
+                <p>There is a difference in the way you run, and this can vary depending on your speed, stride length and how tired you are during the run. That's why it's important to differentiate between walking, jogging and actually running.</p>
+            </div>
+            <div class="text" class="tx" data-animar="fade-up">
+                <p>Well, it is clear that the jog of a high-performance athlete is different from that of an elderly or middle-aged person, so it is important to calmly analyze the types of movements as appropriate for their limitations. But of them, are healthy if you practice.</p>
+            </div>
+            <div class="text" class="tx" data-animar="fade-up">
+                <p>Walk is so google to practice, even you are slowly or so fast like athletic march, which is to walk but so fast. The athletic march is practiced in olympic and in alto high-performance sport. You walk, but you can't take your 2 feet from the floor, so you can't float.</p>
+            </div>
+            <div class="gif" id="gif">
+                <div id="andando" data-animar="fade-up">   
+                    <img src="assets/imgs/meninaandando.gif" alt="meninaandando" id="meninaandando">
+                </div>
+                <div id="marcha" data-animar="fade-up">
+                    <img src="assets/imgs/marcha.gif" alt="marcha" id="marcha">
+                </div>
+            </div>
+        </div>
+        <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>    
+        <div id="bc2"> 
+            <div class="text" class="tx">
+                <p data-animar="fade-up">
+                    Jogging is a versatile physical activity that can be enjoyed by people of all ages and fitness levels. The key to a successful jogging experience is to start slowly and gradually increase the intensity. Finding the right pace is crucial, where you can comfortably hold a conversation while working out. As you build endurance, you can pick up the pace and explore new levels of spee. Jogging offers numerous health benefits, including improved cardiovascular fitness, muscle strengthening, and an overall sense of well-being, making it a popular choice for those seeking an effective and accessible exercise, eventhough it's slowly.</p>
+            </div>
+            <div class="gif" id="gif">
+                <div id="jogging" data-animar="fade-up">
+                    <img src="assets/imgs/meninacorrendo.gif" alt="Girl jogging" id="girlrunning">
+                </div>
+                <div id="wejogging" data-animar="fade-up">
+                    <img src="assets/imgs/pessoascorrendo.gif" alt="People jogging" id="peoplejog">
+                </div>
+            </div>
+            <div class="text" class="tx" data-animar="fade-up">
+                <p>
+                    Running is a more intense form of aerobic exercise compared to jogging. While jogging is characterized by a moderate pace, running involves a more vigorous effort and greater speed. The typical speed of running varies from person to person, but it is generally considered an activity where you reach a pace where you can no longer carry on a comfortable conversation. For many runners, this occurs at intensities that reach 70% or more of maximum heart rate. Running is an excellent way to improve endurance, burn calories and challenge your physical limits, although it requires more rigorous physical and technical preparation than jogging. Both activities offer health benefits, but running is often chosen by those seeking more intense training.
+                </p>
+            </div>
+            <div class="gif" id="run">
+                <div id="kipchogerun" data-animar="fade-up">
+                    <img src="assets/imgs/kiprunning.gif" alt="Kipchoge running">
+                </div>
+                <div id="eliterun" data-animar="fade-up">
+                    <img src="assets/imgs/eliterun.gif" alt="Elite running" id="trackrun">
+                </div>
+            </div>
+            <div class="text" class="tx" data-animar="fade-up">
+                <p>
+                    So, both are good, but you have to know when one of then is more appropriated for right situation. Like when you warm up, to jog is the best option to do before run faster. Enjoy the moviments.
+                </p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+            <a href="index.html">
+              <img src="assets/imgs/racelogo.webp" class="logo" />
+            </a>
+              <p id="especial">
+                This website was created by Gabriel Amano for school project.
+              </p>
+            </div>
+            <div class="col">
+              <h3>Instituction<div class="underline"><span></span></div></h3>
+              <p>ETESP</p>
+              <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+              <p>SP, 01101-010</p>
+              <p class="email-id">eikiamano@gmail.com</p>
+              <h4>+11 - 0123456789</h4>
+            </div>
+            <div class="col">
+              <h3>Links <div class="underline"><span></span></div></h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="impact.html">Impacto na Área</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="nofilme.html">Atuação no Filme</a></li>
+                <li><a href="atualidade.html">Atualidade</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contact-us <div class="underline"><span></span></div></h3>
+              <form>
+                <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
+                <input type="email" placeholder="Write your email here" required />
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">
+            Enzo Boschetti Dal Medico e Gabriel Eiki Amano © 2023 - All Right reserved
+          </p>
+       </footer>
+    <script src="assets/js/mobile-navbar.js"></script>
+    <script src="assets/js/submenu.js"></script>
+    <script src="assets/js/texttransition.js"></script>
+</body>
+</html>

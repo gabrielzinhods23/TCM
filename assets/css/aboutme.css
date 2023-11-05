@@ -1,0 +1,100 @@
+* {
+  margin: 0 auto;
+}
+
+
+main {
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+div#abouttext{
+  display: flex;
+  flex-direction: row;
+  padding: 5vw;
+  font-size: 1.8vw;
+  font-family:  'Source Sans Pro', sans-serif;
+    
+}
+
+div#about1{
+  width: 60vw;
+  padding-right: 10vw;
+}
+
+div#about2{
+  width: 60vw;
+}
+
+#aboutimg {
+  text-align: center;
+}
+
+img#eucorrendo{
+  width: 100%;
+  height: 50vw;
+}
+
+.logo{
+  height: 2vw;;
+}
+
+div#logos {
+  display: flex;
+  place-items: right;
+  width: 30vw;
+  height: 20vw;
+  flex-direction: column;
+
+}
+
+div#instagram, div#cellphone, div#email{
+  display: flex;
+  flex-direction: row;
+}
+
+div#instatext, div#celltext, div#etext {
+  padding-top: 0.7vw;
+  padding-right: 5vw;
+}
+
+
+@media screen and (max-width: 600px) {
+    div#abouttext{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    div#about1{
+        padding-right: 0vw;
+    }
+
+    div#logos {
+        height: 30vw;
+    }
+
+    footer{
+        height: 10vw;
+    }
+
+    main p {
+        font-size: 5vw;
+    }
+
+    main h1 {
+        font-size: 7vw
+    }
+    
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw
+    }
+
+}
+
+}

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Race - What is race?</title>
-    <link rel="stylesheet" href="whatis.css">
-    <link rel="shortcut icon" type="imagex/png" href="A corrida.png">
+    <!--link pro css-->
+    <link rel="stylesheet" href="assets/css/whatis.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!--link pro ícone-->
+    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/racelogo.webp">
+    <!--link do google fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap"rel="stylesheet">   
 </head>
 <body>
-    <div class="header" id="header">
+    <header>
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
@@ -24,8 +26,8 @@
             </svg>
         </button>
         <div class="logo_header">
-            <a href="Index.html">
-                <img src="A corrida.png" alt="A corrida" id="logo">
+            <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
             </a>
         </div>
         <div class="navigation_header" id="navigation_header">
@@ -35,93 +37,140 @@
                     <path
                         d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                 </svg>
-    
-            </button>
-            <a href="whatis.html">Run</a>
-            <hr class="rounded">
+            </button>    
+            <p id="item" class="menus" onmouseover="mostrarMenu()">Run</p>
+            <ul id="ul">
+                <li><a href="whatis.html">What it is</a></li>
+                <li><a href="runandtrot.html">Run and trot?</a></li>
+                <li>5km</li>
+                <li>15km</li>
+                <li>21km</li>
+                <li>42km</li>
+                <li>How am I going?</li>
+            </ul>
+                <hr class="rounded">
+            <a href="">Theory</a>
+                <hr class="rounded">
             <a href="#">Training</a>
-            <hr class="rounded">
+                <hr class="rounded">
             <a href="aboutme.html">About me</a>
-            <hr class="rounded">
+                <hr class="rounded">
             <a href="#" class="active">Contact</a>
         </div>
-    </div>
-    <nav>
-        <p>
+    </header>
+    <main>
+        <p data-animar="fade-up">
             Since we were born, to get somewhere, we had to acquire the ability to move around. So, between 9 and 18 months of the first months of life, we learn to walk, using our legs and walking bipedally.
         </p>
-
-        <p>
+        <p data-animar="fade-up">
             Well, it was possible to find ways to get around, but there is still a desire to get there faster, anxiety is very present. Therefore, by repeating the steps more quickly, and taking a step with the other foot still in the air, the ability to run was developed.
         </p>
-
-        <p>
+        <p data-animar="fade-up">
             Running has become very present in our lives, like getting somewhere faster because we are late, running away from danger, chasing the ball in football, playing catch the flag at school, escaping from our mother's scolding, among much more. And the main creation from this was running, which covers types of running, training and ways to improve, see below.
         </p>
         <div class="imgwhatis">
-            <img src="criança correndo.webp" id="criançacorrendo">
+            <img src="assets/imgs/criançacorrendo.webp" id="criançacorrendo" data-animar="fade-down">
         </div>
-       <h1 id="title1">
+       <h1 id="title1" data-animar="fade-up">
         What is the race?
        </h1>
-       <p>
+       <p data-animar="fade-up">
         Having seen some examples of where to apply running, it is possible to apply it professionally, or just as a hobby. Running has gained a lot of space in the world of personal health, and for those who want to achieve a level of weight loss, and in this case it is an activity that fits very well. Doctors indicate that running is a good practice, practiced continuously and correctly, as it is an excellent cardiorespiratory activity and stimulates many systems and organs in the human body.
         </p>
-
-        <p>
+        <p data-animar="fade-up">
             Therefore, it can be used as a form of treatment for illnesses or diabetic cases, be applied in street races (which can be further explored on other pages), or even used in high performance, where a career and federation is involved, but this is a more advanced stage.        </p>
-        <br>
-        <h1 class="subtitles1">
+        <h1 class="subtitles1" data-animar="fade-up">
             Race for health
         </h1>
-        <p>
+        <p data-animar="fade-up">
             On the training pages, some examples of training that can be carried out on a daily basis are listed, with runs and jogs. An elderly person will not have the same training as a younger person, so it is worth highlighting the importance of seeing a doctor, where they will not only be given running activities, but also muscle exercises, such as stretching and strengthening.
         </p>
-        <p>
+        <p data-animar="fade-up">
             Running 2 to 3 kilometers a day can be very effective in improving the lungs and blood flow, as can going for a walk if it is not possible to run. Even though it is not as high-performance, there are several smart wristwatches on the market at a low price that can be used both as a locator and distance meter, as well as for the main purpose, which is health. These watches are good for monitoring body pressure and heart rate. It is recommended that maintaining a heart rate of 140 to 160 beats per second for 20 minutes is great, but it is still important to note that this training will not be equally effective for all age groups.
         </p>
-        <p>
+        <p data-animar="fade-up">
             That's why it's important to regulate your diet and training routines, look for a specialist, a doctor, and in slightly more advanced cases that will be covered in the next topic, a personal trainer, as they are the ones who will help and guide the entire treatment path. Making small investments such as more comfortable shoes, which help and make running cleaner, clothes that regulate perspiration, or even, as mentioned, a smart watch, are always welcome to make the treatment even more comfortable and easy.
         </p>
         <div class="imgwhatis">
-            <img src="idosos correndo.webp" id="idososcorrendo">
+            <img src="assets/imgs/idososcorrendo.webp" id="idososcorrendo" data-animar="fade-down">
         </div>
-        <br>
-        <br>
-        <h1 class="subtitles1">
+        <h1 class="subtitles1" data-animar="fade-up">
             Free time race
         </h1>
-        <p>
+        <p data-animar="fade-up">
             Using it as a means of health, using it as leisure to be up to date with the world of running is also a great option. This is an option for the group of people, between the ages of 25 and 50, who run as a means of health and attendance. Unlike people who run 3 kilometers at a jog, here people run 5km to 15km at a faster and lighter pace, and investing more in the area.
         </p>
-        <p>
+        <p data-animar="fade-up">
             These people have direct contact with street races, and by paying an entry fee, you are entitled to kits (usually with bottles and t-shirts), you race on streets, closed and free from cars. The money raised generally goes to institutions or charitable associations, so it is a good option for those who want to run, but not alone.
             Of course, there are many people who run in these races and it is difficult to get a medal, where they are usually acquired by the group that will be the next to be mentioned.
         </p>
         <div class="imgwhatis">
-            <img src="corridaderua.webp" id="corridaderua">
+            <img src="assets/imgs/corridaderua.webp" id="corridaderua" data-animar="fade-down">
         </div>
-        <br>
-        <br>
-        <h1 class="subtitles1">
+        <h1 class="subtitles1" data-animar="fade-up">
             The Elite
         </h1>
-        <p>
+        <p data-animar="fade-up">
             This is where running starts to turn from something cool and fun to something serious. Just as there are those who run on the track and use sneakers used in athletics, there are those who run half and long marathons with high-tech shoes. From here on, watches start to increase in price and sneakers approach the R$1000.00 margin, and make use of carbon fiber and other types of rubber.        </p>
-        <p>
+        <p data-animar="fade-up">
             The runner's or athlete's routine is very rigorous, with a regulated diet based on fruits and supplements, as well as training that can involve running and flat sprints. A good example are the Kenyans, the greatest runners in the world, who follow a fixed training routine and move 7 days a week, training for the Olympics or marathons.
         </p>
         <div class="imgwhatis">
-        <img src="maratona.webp" id="maratona1">
+        <img src="assets/imgs/maratona.webp" id="maratona1" data-animar="fade-down">
         </div>
-        <br>
-        <p>
+        <p data-animar="fade-up">
             That is why, having knowledge of these 3 main groups, the important thing is to see what best fits your profile, but by doing what the first group already does, you can be sure that your life will be much better and will bring many benefits.
         </p>
-    </nav>
+    </main>
     <footer>
-        <p>Copyright© 2023 - All right reserved.</p>
-    </footer>
+        <div class="row">
+            <div class="col">
+            <a href="index.html">
+              <img src="assets/imgs/racelogo.webp" class="logo" />
+            </a>
+              <p id="especial">
+                This website was created by Gabriel Amano for school project.
+              </p>
+            </div>
+            <div class="col">
+              <h3>Instituction<div class="underline"><span></span></div></h3>
+              <p>ETESP</p>
+              <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+              <p>SP, 01101-010</p>
+              <p class="email-id">eikiamano@gmail.com</p>
+              <h4>+11 - 0123456789</h4>
+            </div>
+            <div class="col">
+              <h3>Links <div class="underline"><span></span></div></h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="impact.html">Impacto na Área</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="nofilme.html">Atuação no Filme</a></li>
+                <li><a href="atualidade.html">Atualidade</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contact-us <div class="underline"><span></span></div></h3>
+              <form>
+                <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
+                <input type="email" placeholder="Write your email here" required />
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            Enzo Boschetti Dal Medico e Gabriel Eiki Amano © 2023 - All Right reserved
+          </p>
+       </footer>
+    <script src="assets/js/mobile-navbar.js"></script>
+    <script src="assets/js/submenu.js"></script>
+    <script src="assets/js/texttransition.js"></script>
 </body>
-<script src="mobile-navbar.js"></script>
 </html>
