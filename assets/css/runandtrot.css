@@ -93,7 +93,7 @@ main p {
 
     .title {
         height: 50rem;
-        background-image: url(correrouandarresp.png);
+        background-image: url('../imgs/correrouandarresp.png');
     }
 
     .gif{
@@ -108,5 +108,24 @@ main p {
 
     #trackrun {
         width: 90%;
+    }
+
+    [data-animar="fade-down"] {
+        transform: none;
+        opacity: 1;
+    }
+    
+    [data-animar="fade-up"] {
+        transform: none;
+        opacity: 1;
+    }
+    
+    [data-animar] {
+        transition: none;
+    }
+    
+    .animado {
+        opacity: 1;
+        transform: none;
     }
 }

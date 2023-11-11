@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road race and marathon - The race</title>
+    <link rel="stylesheet" href="assets/css/streetracemarathon.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html">
+                    <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+                </a>
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path 
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <p id="item" class="menus" onclick="mostrarMenu()">Run</p>
+                <ul class="ul" id="ul1">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li><a href="5km.html">5km</a></li>
+                    <li><a href="10km">10km</a></li>
+                    <li><a href="15km">15km</a></li>
+                    <li><a href="21km.html">21km</a></li>
+                    <li><a href="42km.html">42km</a></li>
+                    <li><a href="howami.html">How am I going?</a></li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+                <ul class="ul" id="ul2">
+                  <li>Isn't it just running?</li>
+                  <li>Speed measure</li>
+                  <li>Street race and marathon</li>
+                  <li>Shoes</li>
+                  <li>Spike</li>
+                  <li>Bands and watches</li>
+                  <li>Using the internet</li>
+                  <li>How to don't run</li>
+                  <li>Myths</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+                <ul class="ul" id="ul3">
+                  <li>Improve your technique</li>
+                  <li>Stretch</li>
+                  <li>Drills</li>
+                  <li>Post training</li>
+                  <li>Foods</li>
+                  <li>Supplements</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
+            </div>
+        </header>
+        <main>
+            <div id="title">
+                <h1>Road race and marathon</h1>
+            </div>
+            <div id="content">
+                <div id="green">
+                    <h1 data-animar="fade-up">The difference of the two terms</h1>
+                    <p data-animar="fade-up">The terms "marathon" and "road race" are often used interchangeably, but they carry distinct meanings in the realm of running, and the confusion between the two is a common misconception.</p>
+                    <p data-animar="fade-up">A marathon is a specific type of road race that covers a distance of 26.2 miles (42.195 kilometers). It holds a unique status in the running world and is renowned for its historical origins dating back to the Battle of Marathon in ancient Greece. Today, marathons attract runners from all walks of life, and completing a marathon is often considered a significant accomplishment in a runner's journey.</p>
+                    <p data-animar="fade-up">On the other hand, the term "road race" is a more general descriptor for any running event that takes place on roads, encompassing a wide range of distances such as 5Ks, 10Ks, half marathons, and, of course, marathons. Road races serve as inclusive events that cater to runners of various levels and abilities.</p>
+                </div>
+                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+                </svg>  
+                <div id="white"> 
+                    <h1 data-animar="fade-up">The confusion</h1>
+                    <p data-animar="fade-up">The confusion arises when people use these terms interchangeably, assuming that any race conducted on the road is automatically a marathon. This misperception can lead to misunderstandings, especially for those new to the running community. Not every road race is a marathon; marathons are a specific category of road races distinguished by their iconic distance.</p>
+                    <p data-animar="fade-up">It's important to clarify these terms to avoid miscommunication and to better appreciate the diverse landscape of road racing. Whether someone is tackling a 5K for the first time, aiming for a half marathon, or preparing for the monumental challenge of a marathon, each distance represents a unique and commendable achievement in the world of running. Understanding the distinctions between marathon and road race terminology helps foster a more accurate and inclusive discourse within the running community.</p>
+                    <div id="memediv" data-animar="fade-up">
+                    <img src="assets/imgs/marathonmeme.webp" alt="Marathon meme" id="meme">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <div class="row">
+              <div class="col">
+              <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" class="logo" alt="logo">
+              </a>
+                <p id="especial">
+                  This website was created by Gabriel Amano for school project.
+                </p>
+              </div>
+              <div class="col">
+                <h3>Instituction</h3>
+                <p>ETESP</p>
+                <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+                <p>SP, 01101-010</p>
+                <p class="email-id">eikiamano@gmail.com</p>
+                <h4>+11 97154-8992</h4>
+              </div>
+              <div class="col">
+                <h3>Links</h3>
+                <div id="left">
+                <ul id="links">
+                  <li><a href="index.html">The race</a></li>
+                  <li><a href="aboutme.html">About me</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="whatis.html">What it is?</a></li>
+                </ul></div>
+              </div>
+              <div class="col">
+                <h3>Contact-us</h3>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100015094987882" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://github.com/gabrielzinhods23" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://twitter.com/GabrielAmano5" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/eikiamanoo_/"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">
+              Gabriel Eiki Amano © 2023 - All Right reserved
+            </p>
+         </footer>
+          <script src="assets/js/mobile-navbar.js"></script>
+          <script src="assets/js/submenu.js"></script>
+          <script src="assets/js/texttransition.js"></script>
+          <script src="https://kit.fontawesome.com/988fa915cb.js"></script>
+</body>
+</html>

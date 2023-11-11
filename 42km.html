@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 42km - The race</title>
+    <link rel="stylesheet" href="assets/css/42km.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html">
+                    <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+                </a>
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path 
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+        
+                </button>
+                <p id="item" class="menus" onclick="mostrarMenu()">Run</p>
+                <ul class="ul" id="ul">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li><a href="5km">5km</a></li>
+                    <li><a href="10km">10km</a></li>
+                    <li><a href="15km">15km</a></li>
+                    <li>21km</li>
+                    <li>42km</li>
+                    <li>How am I going?</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+                <ul class="ul" id="ul2">
+                  <li>Isn't it just running?</li>
+                  <li>Speed measure</li>
+                  <li>Street race and marathon</li>
+                  <li>Shoes</li>
+                  <li>Spike</li>
+                  <li>Bands and watches</li>
+                  <li>Using the internet</li>
+                  <li>How to don't run</li>
+                  <li>Myths</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+                <ul class="ul" id="ul3">
+                  <li>Improve your technique</li>
+                  <li>Stretch</li>
+                  <li>Drills</li>
+                  <li>Post training</li>
+                  <li>Foods</li>
+                  <li>Supplements</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
+            </div>
+        </header>
+        <main>
+            <div id="title">
+                <h1>42km</h1>
+            </div>
+            <div id="content">
+                <div id="green">
+                    <h1 data-animar="fade-up">Wow!</h1>
+                    <p data-animar="fade-up">Here is the true marathon, the most tiring and hardest 42 kilometers of you whole life. Anybody says that had already ran a marathon just because had completed a street race, but marathon is different, you can see more about these <a href="streetracemarathon.html">terms.</a></p>
+                    <p data-animar="fade-up">The marathon, a race covering a distance of 42.195 kilometers or 26.2 miles, stands as the epitome of long-distance running. Renowned for its historical roots, most notably stemming from the legend of the Greek messenger Pheidippides, the marathon is a test of unparalleled endurance, mental fortitude, and physical prowess.</p>
+                    <h1 data-animar="fade-up">Ultimate Endurance Challenge</h1>
+                    <p data-animar="fade-up">The marathon is often considered the ultimate endurance challenge in the realm of running. It pushes runners to their physical limits, requiring not only cardiovascular stamina but also a finely tuned mental resolve to sustain a consistent pace over the extended distance.</p>
+                    <h1 data-animar="fade-up">Rigorous Training Regimen</h1>
+                    <p data-animar="fade-up">Training for a marathon is a rigorous and disciplined process. Runners gradually build up their mileage, engage in interval training, and incorporate long runs into their weekly routines. The preparation involves not only developing physical endurance but also acclimating the body to the demands of running for several hours.</p>
+                    <h1 data-animar="fade-up">Strategic Pacing and Fueling</h1>
+                    <p data-animar="fade-up">Marathon runners must master the art of strategic pacing to avoid early exhaustion and ensure they have the energy reserves to finish strong. Nutritional considerations, including proper hydration and fueling with carbohydrates, play a crucial role in maintaining energy levels over the course of the race.</p>               
+                </div>
+                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+                </svg>  
+                <div id="white">
+                    <h1 data-animar="fade-up">Emotional Journey</h1>
+                    <p data-animar="fade-up">Running a marathon is not merely a physical feat; it's an emotional journey. Participants experience a spectrum of emotions, from the anticipation at the starting line to the euphoria of crossing the finish line. Overcoming moments of doubt and fatigue contributes to a profound sense of accomplishment.</p>
+                    <h1 data-animar="fade-up">Inspiration and Personal Triumph</h1>
+                    <p data-animar="fade-up"> Completing a marathon is a testament to personal triumph and dedication. Many runners find inspiration in the marathon journey, discovering resilience and strength they may not have known they possessed. The experience often leaves a lasting impact on both physical fitness and mental well-being.</p>
+                    <h1 data-animar="fade-up">Cultural and Historic Significance</h1>
+                    <p data-animar="fade-up">Marathons often hold cultural and historic significance, with iconic races like the Boston Marathon and the New York City Marathon attracting participants from around the world. These events showcase the global appeal of marathon running and celebrate the human spirit's capacity for endurance.</p>
+                    <h1 id="at" data-animar="fade-up">Average Completion Time</h1>
+                    <p data-animar="fade-up">The average completion time for a marathon can vary widely. Elite runners often finish in just over two hours, while average recreational runners may take four to five hours or more. The diversity in completion times reflects the wide range of participants and their distinct motivations.</p>
+                    <p data-animar="fade-up">For recreational runners, the average marathon time is typically in the range of 4 to 5 hours. Elite and highly trained runners can finish a marathon much faster, often completing the race in around 2 to 2.5 hours.</p>
+                    <p data-animar="fade-up">It's important to note that these are general averages, and individual times can vary significantly. Some participants may finish in under 4 hours, while others may take longer than 5 hours. Marathons are inclusive events that attract a diverse range of participants with different goals and abilities.</p>
+                    <h1 data-animar="fade-up">2023</h1>
+                    <p data-animar="fade-up">Kelvin Kiptum broke the marathon world record in sensational fashion at the Chicago Marathon on October 8, 2023. He recently told Olympics.com: “In the future, I know I can run in two hours.” The 23-year-old clocked 2:00:35 to beat Eliud Kipchoge's previous mark by 34 seconds, which he had set in 2022 and achieved the following year.</p>
+                    <div id="kelvin" data-animar="fade-up">
+                        <img id="kiptum" src="assets/imgs/kiptum.webp" alt="KelvinKiptum">
+                        <p id="desc">KelvinKiptum winning the marathon - Image by Olympics.com</p>
+                    </div>
+                    <p data-animar="fade-up"> If you have life goal, a marathon is a good option. The beginning, the training, the process, everything is hard, but in final of the 42km, every effortit is worth it.</p>
+                </div>
+            </div>  
+        </main>
+        <footer>
+          <div class="row">
+              <div class="col">
+              <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" class="logo" alt="logo">
+              </a>
+                <p id="especial">
+                  This website was created by Gabriel Amano for school project.
+                </p>
+              </div>
+              <div class="col">
+                <h3>Instituction</h3>
+                <p>ETESP</p>
+                <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+                <p>SP, 01101-010</p>
+                <p class="email-id">eikiamano@gmail.com</p>
+                <h4>+11 - 97154-8992</h4>
+              </div>
+              <div class="col">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="impact.html">Impacto na Área</a></li>
+                  <li><a href="biografia.html">Biografia</a></li>
+                  <li><a href="nofilme.html">Atuação no Filme</a></li>
+                  <li><a href="atualidade.html">Atualidade</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Contact-us</h3>
+                <form>
+                  <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
+                  <input type="email" placeholder="Write your email here" required>
+                  <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">
+              Gabriel Eiki Amano © 2023 - All Right reserved
+            </p>
+         </footer>
+          <script src="assets/js/mobile-navbar.js"></script>
+          <script src="assets/js/submenu.js"></script>
+          <script src="assets/js/texttransition.js"></script>
+</body>
+</html>

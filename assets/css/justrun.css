@@ -1,0 +1,77 @@
+* {
+    margin: 0 auto;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+#white {
+    padding-bottom: 2rem;
+}
+
+#green {
+    background-color: #9ef3a7;
+    padding-top: 3rem;
+}
+
+#wavepath {
+    fill: #9ef3a7;
+}
+
+
+#title {
+    background-image: url('../imgs/justrun.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 40rem;
+}
+
+#title h1 {
+    padding-top: 4rem;
+    font-size: 15rem;
+    color: green;
+    
+}
+
+main h1 {
+    font-size: 3rem;
+    color: black;
+    padding-top: 5rem;
+    padding-left: 3rem;
+}
+
+main p {
+    padding-top: 1rem ;
+    padding-right: 3rem;
+    padding-left: 5rem ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    #title h1 {
+        padding-top: 4rem;
+        padding-left: 0.6rem;
+        font-size: 7rem;
+
+    }
+    
+    #title {
+        text-align: center;
+        height: 30rem;
+        background-position: center;    
+    }
+}

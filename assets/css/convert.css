@@ -1,0 +1,139 @@
+* {
+    margin: 0 auto;
+}
+
+.col {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+}
+
+nav {
+    background-image: url('../imgs/smartchwatch.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 40vw;
+
+}
+
+nav h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10rem;
+    padding-top: 9vw;
+    color: green;
+}
+
+main {
+    height: 50vw;
+}
+
+#labeltx {
+    font-size: 10rem;
+    padding-top: 3rem;
+    height: 20rem;
+}
+
+form {
+    text-align: center;
+}
+
+#calc {
+    align-items: center;
+    display: flex;
+}
+
+#txtKmh {
+    border-start-start-radius: 50px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+    height: 5vw;
+    width: 40vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#butt {
+    background-color: #9ef3a7;
+    color: black;
+    border: 1px;
+    border-start-start-radius: 50px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+    font-size: 5vw;
+    height: 6vw;
+    width: 30vw;
+}
+
+#resultado {
+    font-size: 5vw;
+    animation: result 10s ease forwards;
+}
+
+@keyframes result {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#butt:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-sm-2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+    padding-left: 1vw;
+}
+
+#resultado {
+    padding-top: 3vh;
+    text-align: center;
+}
+
+#button {
+    padding-top: 4vh;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: 20rem;
+    }
+
+    nav h1 {
+        font-size: 5rem;
+    }
+
+    #labeltx {
+        height: 10rem;
+        font-size: 3rem;
+    }
+
+    #txtKmh {
+        height: 2rem;
+    }
+
+    #butt {
+        height: 5rem;
+        width: 12rem;
+        font-size: 10vw;
+    }
+
+    main {
+        height: 20rem;
+    }
+
+
+}

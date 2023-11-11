@@ -38,11 +38,14 @@ li {
     }
   }
 
-.content {
-    background-image: url('../imgs/tiro-medio-de-pessoas-correndo-juntas.webp');
+body {
+    background-image: url('../imgs/tiromedio.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.content {
     padding-top: 10vw;
     padding-left: 2vw;
     font-family: Inknut Antiqua;
@@ -60,10 +63,14 @@ li {
     font-size: 8vw;
 }
 
+#content {
+    background-image: linear-gradient(to right, black, transparent, transparent);
+}
 @media screen and (max-width: 600px) {
     .content{
         padding-top: 120px;
         height: 150vw;
+        background-position: center;  
 
     }
 
@@ -74,6 +81,8 @@ li {
     .content p{
         font-size: 4vw;
     }
+
+
 
 }
 

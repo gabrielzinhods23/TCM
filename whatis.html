@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <!--link pro ícone-->
-    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/racelogo.webp">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
     <!--link do google fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,19 +39,39 @@
                 </svg>
             </button>    
             <p id="item" class="menus" onmouseover="mostrarMenu()">Run</p>
-            <ul id="ul">
+            <ul class="ul" id="ul1">
                 <li><a href="whatis.html">What it is</a></li>
                 <li><a href="runandtrot.html">Run and trot?</a></li>
-                <li>5km</li>
-                <li>15km</li>
-                <li>21km</li>
-                <li>42km</li>
+                <li><a href="5km.html">5km</a></li>
+                <li><a href="10km.html">10km</a></li>
+                <li><a href="15km.html">15km</a></li>
+                <li><a href="21km.html">21km</a></li>
+                <li><a href="42km.html">21km</a></li>
                 <li>How am I going?</li>
             </ul>
                 <hr class="rounded">
-            <a href="">Theory</a>
+            <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+            <ul class="ul" id="ul2">
+              <li>Isn't it just running?</li>
+              <li>Speed measure</li>
+              <li>Street race and marathon</li>
+              <li>Shoes</li>
+              <li>Spike</li>
+              <li>Bands and watches</li>
+              <li>Using the internet</li>
+              <li>How to don't run</li>
+              <li>Myths</li>
+            </ul>
                 <hr class="rounded">
-            <a href="#">Training</a>
+            <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+            <ul class="ul" id="ul3">
+              <li>Improve your technique</li>
+              <li>Stretch</li>
+              <li>Drills</li>
+              <li>Post training</li>
+              <li>Foods</li>
+              <li>Supplements</li>
+            </ul>
                 <hr class="rounded">
             <a href="aboutme.html">About me</a>
                 <hr class="rounded">
@@ -133,7 +153,7 @@
               </p>
             </div>
             <div class="col">
-              <h3>Instituction<div class="underline"><span></span></div></h3>
+              <h3>Instituction</h3>
               <p>ETESP</p>
               <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
               <p>SP, 01101-010</p>
@@ -141,7 +161,7 @@
               <h4>+11 - 0123456789</h4>
             </div>
             <div class="col">
-              <h3>Links <div class="underline"><span></span></div></h3>
+              <h3>Links</h3>
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="impact.html">Impacto na Área</a></li>
@@ -151,7 +171,7 @@
               </ul>
             </div>
             <div class="col">
-              <h3>Contact-us <div class="underline"><span></span></div></h3>
+              <h3>Contact-us</h3>
               <form>
                 <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
                 <input type="email" placeholder="Write your email here" required />
@@ -166,7 +186,7 @@
             </div>
           </div>
           <p class="copyright">
-            Enzo Boschetti Dal Medico e Gabriel Eiki Amano © 2023 - All Right reserved
+            Gabriel Eiki Amano © 2023 - All Right reserved
           </p>
        </footer>
     <script src="assets/js/mobile-navbar.js"></script>

@@ -11,18 +11,18 @@ footer {
     background: linear-gradient(
       90deg,
       rgb(151, 248, 172) 0%,
-      rgb(2, 199, 12) 66%
+      rgb(240, 240, 240) 66%
     );
     padding: 100px 0 30px;
     font-size: 13px;
     line-height: 20px;
   }
-  
+
   .row {
     width: 85%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
@@ -36,10 +36,10 @@ footer {
     margin-bottom: 30px;
   }
   .col h3 {
-    width: fit-content;
     position: relative;
     margin-bottom: 40px;
     color: rgb(0, 0, 0);
+    text-align: left;
   }
   .col p {
     color: rgb(0, 0, 0);
@@ -66,33 +66,27 @@ footer {
     color: rgb(32, 0, 0);
     font-size: 1.1em;
   }
-  form {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    margin-bottom: 50px;
-  }
-  form .far {
+
+  .far {
     font-size: 18px;
     margin-right: 10px;
   }
-  form input {
+
+  input {
     width: 100%;
     background: transparent;
     color: #ccc;
-    border: 0;
     outline: none;
   }
 
-  form button {
+  button {
     background: transparent;
     border: 0;
     cursor: pointer;
     outline: none;
   }
-  form .fas {
+  
+  .fas {
     font-size: 16px;
     color: #ccc;
   }
@@ -107,6 +101,10 @@ footer {
     background: white;
     margin-right: 15px;
     cursor: pointer;
+  }
+
+  .social-icons {
+    text-align: left;
   }
 
   .copyright {
@@ -125,15 +123,9 @@ footer {
     left: 0;
     overflow: hidden;
   }
-  .underline span {
-    width: 15px;
-    height: 100%;
-    background: #ffffff;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite;
+
+  ol,ul {
+  padding-left: 0;
   }
   
   @keyframes moving {
@@ -145,9 +137,27 @@ footer {
     }
   }
 
-  @media screen and (max-width) {
-    .row {
+  @media screen and (max-width: 600px) {
+    #left {
       display: flex;
       flex-direction: column;
+      align-items: left;
+    }
+
+    footer {
+      bottom: unset;
+    }
+    .col {
+      align-items: left;
+      margin-left: 0;
+    }
+
+   .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col h3 {
+      color: rgb(0, 48, 0);
     }
   }

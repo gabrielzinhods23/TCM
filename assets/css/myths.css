@@ -1,0 +1,82 @@
+* {
+    margin: 0 auto;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+#white {
+    padding-bottom: 2rem;
+}
+
+#green {
+    background-color: #9ef3a7;
+}
+
+#wavepath {
+    fill: #9ef3a7;
+}
+
+#title {
+    background-image: url('../imgs/myths.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 40rem;
+}
+
+#title h1 {
+    padding-top: 8rem;
+    font-size: 20rem;
+    color: rgb(255, 255, 255);
+    
+}
+
+main h1 {
+    font-size: 3rem;
+    color: black;
+    padding-top: 5rem;
+    padding-left: 3rem;
+}
+
+main p {
+    padding-top: 1rem ;
+    padding-right: 3rem;
+    padding-left: 3rem ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.imgdiv {
+    display: flex;
+    text-align: center;
+}
+
+#img1 {
+    width: 37vw;
+    height: 23vw;
+}
+
+@media screen and (max-width: 600px) {
+    #title {
+        display: flex;
+        text-align: center;
+        padding-left: 0rem;
+    }
+    #title h1 {
+        font-size: 30vw;
+    }
+
+}

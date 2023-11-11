@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10km - The race</title>
+    <link rel="stylesheet" href="assets/css/10km.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html">
+                    <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+                </a>
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path 
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <p id="item" class="menus" onclick="mostrarMenu()">Run</p>
+                <ul class="ul" id="ul1">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li><a href="5km">5km</a></li>
+                    <li><a href="10km">10km</a></li>
+                    <li><a href="15km">15km</a></li>
+                    <li>21km</li>
+                    <li>42km</li>
+                    <li>How am I going?</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+                <ul class="ul" id="ul2">
+                  <li>Isn't it just running?</li>
+                  <li>Speed measure</li>
+                  <li>Street race and marathon</li>
+                  <li>Shoes</li>
+                  <li>Spike</li>
+                  <li>Bands and watches</li>
+                  <li>Using the internet</li>
+                  <li>How to don't run</li>
+                  <li>Myths</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+                <ul class="ul" id="ul3">
+                  <li>Improve your technique</li>
+                  <li>Stretch</li>
+                  <li>Drills</li>
+                  <li>Post training</li>
+                  <li>Foods</li>
+                  <li>Supplements</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
+            </div>
+      </header>
+      <main>
+        <div id="title">
+          <h1>10km run</h1>
+        </div>
+        <div id="content">
+          <div id="green">
+            <h1 data-animar="fade-up">Is this harder than 5km?</h1>
+            <p data-animar="fade-up">Well, the distance is the doubled, but it depends of the speed that you improve it. So, differs from the 5 km race in several significant ways.</p>
+            <h1 data-animar="fade-up">Distance</h1>
+            <p data-animar="fade-up">The distance is the most obvious difference. While the 5 km race covers a distance of 5 kilometers (about 3.1 miles), the 10 km race requires runners to cover double the distance, spanning 10 kilometers, which is approximately 6.2 miles.</p>
+            <h1 data-animar="fade-up">Fitness Level</h1>
+            <p data-animar="fade-up">The 10 km race is generally considered more challenging in terms of endurance compared to the 5 km race. Runners need to have a higher fitness level to handle the additional distance.</p>
+            <h1 data-animar="fade-up">Race Strategy</h1> 
+            <p data-animar="fade-up">In the 10 km race, race strategy often involves a balance between maintaining a consistent pace throughout the race and the ability to handle the additional distance. Some runners choose to gradually accelerate during the race, while others prefer to maintain a steady pace.</p>
+          </div>
+          <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+          </svg>    
+          <div id="white" data-animar="fade-up">
+            <h1 data-animar="fade-up">Experience</h1>
+            <p data-animar="fade-up">The 10 km race is often seen as an intermediate step between 5 km races and half-marathons (21.1 km). It attracts runners who want a slightly greater challenge than a 5 km race but aren't yet ready to tackle a half-marathon.</p>
+            <h1 data-animar="fade-up">Benefits</h1>
+            <p data-animar="fade-up">Just like the 5 km race, the 10 km race offers health benefits, including improved cardiovascular fitness, muscle strengthening, and stress reduction. Increasing the distance can provide an additional sense of achievement.</p>
+            <h1 id="at" data-animar="fade-up">Average Time</h1>
+            <p data-animar="fade-up">Average times to complete a 10 km race are longer than those for a 5 km race. For an average runner, a time of 45 to 60 minutes is considered respectable, while experienced runners can complete the distance in under 40 minutes.</p>
+            <p data-animar="fade-up">In summary, the 10 km race is a more challenging distance compared to the 5 km race, requiring more physical and mental preparation. The choice between the two distances depends on individual goals and the fitness level of each runner. </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="row">
+            <div class="col">
+            <a href="index.html">
+              <img src="assets/imgs/racelogo.webp" class="logo" />
+            </a>
+              <p id="especial">
+                This website was created by Gabriel Amano for school project.
+              </p>
+            </div>
+            <div class="col">
+              <h3>Instituction</h3>
+              <p>ETESP</p>
+              <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+              <p>SP, 01101-010</p>
+              <p class="email-id">eikiamano@gmail.com</p>
+              <h4>+11 - 0123456789</h4>
+            </div>
+            <div class="col">
+              <h3>Links </h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="impact.html">Impacto na Área</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="nofilme.html">Atuação no Filme</a></li>
+                <li><a href="atualidade.html">Atualidade</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contact-us </h3>
+              <form>
+                <i class="far fa-regular fa-envelope" style="color: #ffffff"></i>
+                <input type="email" placeholder="Write your email here" required />
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">
+            Gabriel Eiki Amano © 2023 - All Right reserved
+          </p>
+       </footer>
+<script src="assets/js/mobile-navbar.js"></script>
+<script src="assets/js/submenu.js"></script>
+<script src="assets/js/texttransition.js"></script>
+</body>
+</html>

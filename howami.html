@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How am I going? - The race</title>
+    <link rel="stylesheet" href="assets/css/howami.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html">
+                    <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+                </a>
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path 
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+        
+                </button>
+                <p id="item" class="menus" onclick="mostrarMenu()">Run</p>
+                <ul class="ul" id="ul1">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li><a href="5km">5km</a></li>
+                    <li><a href="10km">10km</a></li>
+                    <li><a href="15km">15km</a></li>
+                    <li>21km</li>
+                    <li>42km</li>
+                    <li>How am I going?</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+                <ul class="ul" id="ul2">
+                  <li>Isn't it just running?</li>
+                  <li>Speed measure</li>
+                  <li>Street race and marathon</li>
+                  <li>Shoes</li>
+                  <li>Spike</li>
+                  <li>Bands and watches</li>
+                  <li>Using the internet</li>
+                  <li>How to don't run</li>
+                  <li>Myths</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+                <ul class="ul" id="ul3">
+                  <li>Improve your technique</li>
+                  <li>Stretch</li>
+                  <li>Drills</li>
+                  <li>Post training</li>
+                  <li>Foods</li>
+                  <li>Supplements</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
+            </div>
+        </header>
+        <main>
+            <div id="title">
+                <h1 data-animar="fade-up">How am I going?</h1>
+            </div>
+            <div id="content"> 
+                <div id="green">
+                    <h1 data-animar="fade-up">How can I know my performance?</h1>
+                    <p data-animar="fade-up"> It largely depends on your age, and the training you do every day. It can vary with goals, whether you are elite, whether you run for health, or by age.</p>
+                    <p data-animar="fade-up">If you've already reached the 60 mark, I'm sorry to tell you but times haven't turned out like they did in your youth, but completing the distance, be it 5km or even 15km, congratulations, it's incredible!
+                    </p>
+                    <p data-animar="fade-up">Here are some times when people usually take these tests so you can stay on top of how you're doing. But remember the importance of consulting a doctor, a trainer or a personal trainer, and that your time will be different from other people with other goals.</p>
+                </div>
+                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+                </svg>  
+                <div id="white">
+                    <h1>5km</h1>
+                    <div class="km">
+                        <form id="timeForm">
+                        <div><button type="button" onclick="showEvaluation('Less than 20 minutes')">Less than 20 minutes</button></div>
+                        <div><button type="button" onclick="showEvaluation('20-25 minutes')">20-25 minutes</button></div>
+                        <div><button type="button" onclick="showEvaluation('25-30 minutes')">25-30 minutes</button></div>
+                        <div><button type="button" onclick="showEvaluation('30-35 minutes')">30-35 minutes</button></div>
+                        <div><button type="button" onclick="showEvaluation('More than 35 minutes')">More than 35 minutes</button></div>
+                        </form>
+                        <div id="result">
+
+                        </div>
+                    </div>
+                    <h1>10km</h1>
+                    <div class="km">
+                    <form id="timeForm">
+                    <div><button type="button" onclick="showEvaluation2('Less than 40 minutes')">Less than 40 minutes</button></div> 
+                    <div><button type="button" onclick="showEvaluation2('40-50 minutes')">40-50 minutes</button></div>
+                    <div><button type="button" onclick="showEvaluation2('50-60 minutes')">50-60 minutes</button></div>
+                    <div><button type="button" onclick="showEvaluation2('60-70 minutes')">60-70 minutes</button></div>
+                    <div><button type="button" onclick="showEvaluation2('More than 70 minutes')">More than 70 minutes</button></div>
+                    </form>
+                    <div id="result2">
+
+                    </div>
+                    </div>
+                    <h1>15km</h1>
+                    <div class="km">
+                    <form id="timeForm">
+                    <div><button type="button" onclick="showEvaluation3('Less than 1 hour')">Less than 1 hour</button></div>               
+                    <div><button type="button" onclick="showEvaluation3('1-1.5 hours')">1-1.5 hours</button></div>                
+                    <div><button type="button" onclick="showEvaluation3('1.5-2 hours')">1.5-2 hours</button></div>                
+                    <div><button type="button" onclick="showEvaluation3('2-2.5 hours')">2-2.5 hours</button></div>              
+                    <div><button type="button" onclick="showEvaluation3('More than 2.5 hours')">More than 2.5 hours</button></div>
+                    </form>
+                    <div id="result3">
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer>
+          <div class="row">
+              <div class="col">
+              <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" class="logo" alt="logo">
+              </a>
+                <p id="especial">
+                  This website was created by Gabriel Amano for school project.
+                </p>
+              </div>
+              <div class="col">
+                <h3>Instituction</h3>
+                <p>ETESP</p>
+                <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+                <p>SP, 01101-010</p>
+                <p class="email-id">eikiamano@gmail.com</p>
+                <h4>+11 97154-8992</h4>
+              </div>
+              <div class="col">
+                <h3>Links </h3>
+                <ul id="links">
+                  <li><a href="index.html">The race</a></li>
+                  <li><a href="aboutme.html">About me</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="whatis.html">What it is?</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Contact-us </h3>
+                <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">
+              Gabriel Eiki Amano © 2023 - All Right reserved
+            </p>
+         </footer>
+          <script src="assets/js/howami.js"></script>
+          <script src="assets/js/mobile-navbar.js"></script>
+          <script src="assets/js/submenu.js"></script>
+          <script src="assets/js/texttransition.js"></script>
+</body>
+</html>

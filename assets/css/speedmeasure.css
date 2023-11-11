@@ -1,0 +1,122 @@
+* {
+    margin: 0 auto;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+#white {
+    padding-bottom: 2rem;
+}
+
+#green {
+    background-color: #9ef3a7;
+}
+
+#wavepath {
+    fill: #9ef3a7;
+}
+
+#title {
+    background-image: url('../imgs/speedmeasure.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 40rem;
+}
+
+#title h1 {
+    padding-top: 5rem;
+    font-size: 15rem;
+    color: rgb(43, 255, 0);
+    
+}
+
+main {
+    height: 140vw;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: black;
+    padding-top: 5rem;
+    padding-left: 3rem;
+}
+
+main p {
+    padding-top: 1rem ;
+    padding-right: 3rem;
+    padding-left: 3rem ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#measure {
+    display: flex;
+    flex-direction: row;
+}
+
+.meas {
+    border: solid #000 4px;
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
+}
+
+.imgpace {
+    height: 20vw;
+    width: 25vw;
+}
+
+.convertlink {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+
+.convertlink:hover {
+    scale: 1.1;
+    transition: 1s ease;
+}
+
+@media screen and (max-width: 600px) {
+    #title h1 {
+        padding-top: 9rem;
+        padding-left: 0.6rem;
+        font-size: 5rem;
+        color: darkgreen;
+
+    }
+    
+    #measure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .convertlink {
+        padding: 2rem;
+        height: 15rem;
+    }
+
+    main {
+        height: 1000vw;
+    }
+
+    #content h1 {
+        font-size: 2rem;
+        background-position: center;    
+    }
+}   

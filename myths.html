@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myths - The race</title>
+    <link rel="stylesheet" href="assets/css/myths.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="imagex/webp" href="assets/imgs/racelogo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inknut+Antiqua:wght@300&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html">
+                    <img src="assets/imgs/racelogo.webp" alt="A corrida" id="logo">
+                </a>
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path 
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <p id="item" class="menus" onclick="mostrarMenu()">Run</p>
+                <ul class="ul" id="ul1">
+                    <li><a href="whatis.html">What it is</a></li>
+                    <li><a href="runandtrot.html">Run and trot?</a></li>
+                    <li><a href="5km.html">5km</a></li>
+                    <li><a href="10km">10km</a></li>
+                    <li><a href="15km">15km</a></li>
+                    <li><a href="21km.html">21km</a></li>
+                    <li><a href="42km.html">42km</a></li>
+                    <li><a href="howami.html">How am I going?</a></li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item2" class="menus" onclick="mostrarMenu2()">Theory</p>
+                <ul class="ul" id="ul2">
+                  <li><a href="justrun.html">Isn't it just running?</a></li>
+                  <li><a href="speedmeasure.html">Speed measure</a></li>
+                  <li><a href="streetracemarathon.html">Street race and marathon</a></li>
+                  <li>Shoes</li>
+                  <li>Spike</li>
+                  <li>Bands and watches</li>
+                  <li>Using the internet</li>
+                  <li>How to don't run</li>
+                  <li>Myths</li>
+                </ul>
+                    <hr class="rounded">
+                <p id="item3" class="menus" onclick="mostrarMenu3()">Training</p>
+                <ul class="ul" id="ul3">
+                  <li>Improve your technique</li>
+                  <li>Stretch</li>
+                  <li>Drills</li>
+                  <li>Post training</li>
+                  <li>Foods</li>
+                  <li>Supplements</li>
+                </ul>
+                    <hr class="rounded">
+                <a href="aboutme.html">About me</a>
+                    <hr class="rounded">
+                <a href="#" class="active">Contact</a>
+            </div>
+        </header>
+        <main>
+            <div id="title">
+                <h1>Myths</h1>
+            </div>
+            <div id="content">
+                <div id="green">
+                    <h1 data-animar="fade-up">Running is Bad for Your Knees</h1>
+                    <p data-animar="fade-up">There's a persistent myth that running is detrimental to the knees and may lead to joint problems. However, studies show that, when practiced in moderation and with proper care, running can actually strengthen the muscles around the joints, contributing to long-term joint health.</p>
+                    <div class="imgdiv" >
+                    <img src="assets/imgs/knee.webp" alt="Knees hurt" id="img1" data-animar="fade-up">
+                    </div>
+                    <h1 data-animar="fade-up">Runners Need Heavily Cushioned Shoes</h1>
+                    <p data-animar="fade-up">The belief that highly cushioned shoes are essential for runners' safety isn't entirely accurate. Shoe choice should be based on individual biomechanics and running style, and not all runners benefit from excessively cushioned footwear.</p>
+                    <h1 data-animar="fade-up">Running Every Day is Necessary for Improvement</h1>
+                    <p data-animar="fade-up">The idea that continuous improvement requires running every day can lead to exhaustion and an increased risk of injuries. Rest is crucial for muscle recovery, and training programs that include rest days and cross-training can be equally effective.</p>
+                    <h1 data-animar="fade-up">Treadmill Running is Easier than Outdoor Running</h1>
+                    <p data-animar="fade-up">Running on a treadmill and running outdoors involve different physical and mental demands, and it's not correct to claim that treadmill running is inherently easier. Both forms of running have their benefits, and the choice between them depends on individual preferences.</p>
+                </div>
+                <svg id="bg" style="background-color:#ffffff;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+                </svg>  
+                <div id="white">
+                    <h1 data-animar="fade-up">You Need to Drink a Lot of Water During a Run</h1>
+                    <p data-animar="fade-up"> While hydration is crucial, excessive water intake during a run can lead to hyponatremia, a serious condition. Fluid intake should be balanced and adjusted based on environmental conditions and individual needs.</p>
+                    <div class="imgdiv" >
+                        <img src="assets/imgs/water.webp" alt="Water drink" id="img2" data-animar="fade-up">
+                    </div>
+                    <h1 data-animar="fade-up">Running is Only for the Young and Agile</h1>
+                    <p data-animar="fade-up">Running is an accessible activity for individuals of all ages. With proper guidance and a suitable program, older individuals and beginners can enjoy the benefits of running by tailoring the training to their individual capabilities.</p>
+                    <h1 data-animar="fade-up">All Runners Should Follow the Same Running Technique</h1>
+                    <p data-animar="fade-up">There's no one-size-fits-all running technique. Each person's biomechanics are unique, and the emphasis should be on efficiency and injury prevention, adapting the technique as needed.</p>
+                    <p data-animar="fade-up"> Debunking these beliefs is crucial to promote a balanced and safe approach to running, allowing runners to fully enjoy the enriching physical activity.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <div class="row">
+              <div class="col">
+              <a href="index.html">
+                <img src="assets/imgs/racelogo.webp" class="logo" alt="logo">
+              </a>
+                <p id="especial">
+                  This website was created by Gabriel Amano for school project.
+                </p>
+              </div>
+              <div class="col">
+                <h3>Instituction</h3>
+                <p>ETESP</p>
+                <p>Av. Tiradentes, 615 - Luz, São Paulo</p>
+                <p>SP, 01101-010</p>
+                <p class="email-id">eikiamano@gmail.com</p>
+                <h4>+11 97154-8992</h4>
+              </div>
+              <div class="col">
+                <h3>Links</h3>
+                <div id="left">
+                <ul id="links">
+                  <li><a href="index.html">The race</a></li>
+                  <li><a href="aboutme.html">About me</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="whatis.html">What it is?</a></li>
+                </ul></div>
+              </div>
+              <div class="col">
+                <h3>Contact-us</h3>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100015094987882" target="_blank"><i class="fab fa-facebook-f" id="facebook"></i></a>
+                  <a href="https://github.com/gabrielzinhods23" target="_blank"><i class="fab fa-github" id="github"></i></a>
+                  <a href="https://twitter.com/GabrielAmano5" target="_blank"><i class="fab fa-twitter" id="twitter"></i></a>
+                  <a href="https://www.instagram.com/eikiamanoo_/"><i class="fab fa-instagram" id="instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">
+              Gabriel Eiki Amano © 2023 - All Right reserved
+            </p>
+         </footer>
+          <script src="assets/js/mobile-navbar.js"></script>
+          <script src="assets/js/submenu.js"></script>
+          <script src="assets/js/texttransition.js"></script>
+          <script src="https://kit.fontawesome.com/988fa915cb.js"></script>
+</body>
+</html>
